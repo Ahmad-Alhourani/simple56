@@ -61,7 +61,7 @@ class TestController extends Controller
     public function store(CreateTest $request)
     {
         $obj = $this->testRepository->create(
-            $request->only(["name1", "l_name", "email", "sms"])
+            $request->only(["name", "full_name", "l_name", "email", "sms"])
         );
 
         event(new TestCreated($obj));
@@ -125,6 +125,14 @@ class TestController extends Controller
      *
      */
     public function destroy(Test $test)
+    {
+        $obj = $this->testRepository->delete($test);
+        event(new TestDeleted($obj));
+        return redirect()
+            ->back()
+            ->withFlashSuccess(__('alerts.frontend.test.deleted'));
+    }
+    public function export(Test $test)
     {
         $obj = $this->testRepository->delete($test);
         event(new TestDeleted($obj));
