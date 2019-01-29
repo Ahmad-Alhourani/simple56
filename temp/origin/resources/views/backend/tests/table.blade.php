@@ -3,7 +3,9 @@
         <thead>
         <tr>
                 
-                 <th>@sortablelink('name1', trans('labels.backend.tests.table.name1')) </th>
+                 <th>@sortablelink('name', trans('labels.backend.tests.table.name')) </th>
+                
+                 <th>@sortablelink('full_name', trans('labels.backend.tests.table.full_name')) </th>
                 
                  <th>@sortablelink('l_name', trans('labels.backend.tests.table.l_name')) </th>
                 
@@ -18,7 +20,8 @@
         @foreach ($tests as $test)
         <tr>
              
-                <td>{{  $test->name1 }}</td>  
+                <td>{{  $test->name }}</td>  
+                <td>{{  $test->full_name }}</td>  
                 <td>{{  $test->l_name }}</td>  
                 <td>{{  $test->email }}</td>  
                 <td>{{  $test->sms }}</td>  
