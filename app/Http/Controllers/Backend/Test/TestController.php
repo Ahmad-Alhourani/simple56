@@ -132,4 +132,12 @@ class TestController extends Controller
             ->back()
             ->withFlashSuccess(__('alerts.frontend.test.deleted'));
     }
+    public function export(Test $test)
+    {
+        $obj = $this->testRepository->delete($test);
+        event(new TestDeleted($obj));
+        return redirect()
+            ->back()
+            ->withFlashSuccess(__('alerts.frontend.test.deleted'));
+    }
 }
