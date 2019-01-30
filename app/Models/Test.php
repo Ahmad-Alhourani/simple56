@@ -40,7 +40,7 @@ class Test extends Model
      * @var array
      */
 
-    protected $sortable = ["id", "name1", "l_name", "email"];
+    protected $sortable = ["id", "name", "full_name", "l_name", "email"];
 
     /**
      * The attributes that are mass assignable.
@@ -48,9 +48,9 @@ class Test extends Model
      * @var array
      */
 
-    protected $fillable = ["name1", "l_name", "email", "sms"];
+    protected $fillable = ["name", "full_name", "l_name", "email", "sms"];
 
-    public $timestamps = false;
+    public $timestamps = ["create_at", "update_at"];
 
     /**
      * The attributes that should be mutated to dates.

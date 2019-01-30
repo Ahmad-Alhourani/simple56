@@ -16,12 +16,14 @@ class CreateTestsTable extends Migration
     {
         Schema::create('tests', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name1');
+            $table->string('name');
+            $table->string('full_name');
             $table->string('l_name')->nullable();
             $table->string('email');
             $table->string('sms')->nullable();
 
-            $table->timestamps();
+            $table->dateTimeTz('created_at')->nullable();
+            $table->dateTimeTz('updated_at')->nullable();
             $table->string('slug');
             $table->softDeletes();
             $table->unique('slug');
