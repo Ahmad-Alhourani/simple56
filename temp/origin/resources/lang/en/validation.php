@@ -198,7 +198,8 @@ return [
             //start_Test_start
             'tests' => [
                 'id' => "Id",
-                'name1' => "Name",
+                'name' => "Name",
+                'l_name2' => "Last Name2",
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS"
