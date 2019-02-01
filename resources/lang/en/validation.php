@@ -202,8 +202,18 @@ return [
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS"
-            ]
+            ],
             //end_Test_end
+            //start_Test2_start
+            'test2s' => [
+                'id' => "Id",
+                'name' => "Name",
+                'l_name' => "Last Name",
+                'email' => "Email",
+                'des' => "Des",
+                'sms' => "SMS"
+            ]
+            //end_Test2_end
             // Do not delete me :) I'm used for auto-generation
         ],
 
