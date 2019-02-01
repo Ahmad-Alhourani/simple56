@@ -39,6 +39,11 @@ return [
             'title' => ' Tests'
         ],
         //end_Test_end
+        //start_Test2_start
+        'test2s' => [
+            'title' => ' Test2S'
+        ],
+        //end_Test2_end
         // Do not delete me :) I'm used for auto-generation
 
         'general' => [
