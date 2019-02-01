@@ -195,15 +195,16 @@ return [
                 ]
             ],
 
-            //start_Test_start
-            'tests' => [
+            //start_Test2_start
+            'test2s' => [
                 'id' => "Id",
-                'name1' => "Name",
+                'name' => "Name",
+                'l_name2' => "Last Name2",
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS"
             ]
-            //end_Test_end
+            //end_Test2_end
             // Do not delete me :) I'm used for auto-generation
         ],
 

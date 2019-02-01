@@ -44,13 +44,13 @@ return [
                 'Your information was successfully sent. We will respond back to the e-mail provided as soon as we can.'
         ],
 
-        //start_Test_start
-        'test' => [
-            'saved' => 'Test saved successfully.',
-            'updated' => 'Test updated successfully.',
-            'deleted' => 'Test deleted successfully.'
+        //start_Test2_start
+        'test2' => [
+            'saved' => 'Test2 saved successfully.',
+            'updated' => 'Test2 updated successfully.',
+            'deleted' => 'Test2 deleted successfully.'
         ]
-        //end_Test_end
+        //end_Test2_end
 
         // Do not delete me :) I'm used for auto-generation
     ]

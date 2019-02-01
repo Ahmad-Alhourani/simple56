@@ -7,39 +7,39 @@ Breadcrumbs::for('admin.dashboard', function ($trail) {
     );
 });
 
-//start_Test_start
-Breadcrumbs::register('admin.test.index', function ($breadcrumbs) {
+//start_Test2_start
+Breadcrumbs::register('admin.test2.index', function ($breadcrumbs) {
     $breadcrumbs->parent('admin.dashboard');
     $breadcrumbs->push(
-        __('strings.backend.tests.title'),
-        route('admin.test.index')
+        __('strings.backend.test2s.title'),
+        route('admin.test2.index')
     );
 });
 
-Breadcrumbs::register('admin.test.create', function ($breadcrumbs) {
-    $breadcrumbs->parent('admin.test.index');
+Breadcrumbs::register('admin.test2.create', function ($breadcrumbs) {
+    $breadcrumbs->parent('admin.test2.index');
     $breadcrumbs->push(
-        __('labels.backend.tests.create'),
-        route('admin.test.create')
+        __('labels.backend.test2s.create'),
+        route('admin.test2.create')
     );
 });
 
-Breadcrumbs::register('admin.test.show', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.test.index');
+Breadcrumbs::register('admin.test2.show', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.test2.index');
     $breadcrumbs->push(
-        __('menus.backend.tests.view'),
-        route('admin.test.show', $id)
+        __('menus.backend.test2s.view'),
+        route('admin.test2.show', $id)
     );
 });
 
-Breadcrumbs::register('admin.test.edit', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('admin.test.index');
+Breadcrumbs::register('admin.test2.edit', function ($breadcrumbs, $id) {
+    $breadcrumbs->parent('admin.test2.index');
     $breadcrumbs->push(
-        __('menus.backend.tests.edit'),
-        route('admin.test.edit', $id)
+        __('menus.backend.test2s.edit'),
+        route('admin.test2.edit', $id)
     );
 });
-//end_Test_end
+//end_Test2_end
 
 //*****Do Not Delete Me
 
