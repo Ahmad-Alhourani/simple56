@@ -13,11 +13,21 @@
          </div><!--form-group-->
          
             <div class="form-group row">
-            {{ html()->label(__('validation.attributes.backend.tests.name1'))->class('col-md-2 form-control-label')->for('name1') }}
+            {{ html()->label(__('validation.attributes.backend.tests.name'))->class('col-md-2 form-control-label')->for('name') }}
             <div class="col-md-10">
        
 
-                {{ $test->name1 }}
+                {{ $test->name }}
+
+            </div><!--col-->
+         </div><!--form-group-->
+         
+            <div class="form-group row">
+            {{ html()->label(__('validation.attributes.backend.tests.l_name2'))->class('col-md-2 form-control-label')->for('l_name2') }}
+            <div class="col-md-10">
+       
+
+                {{ $test->l_name2 }}
 
             </div><!--col-->
          </div><!--form-group-->

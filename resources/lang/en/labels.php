@@ -123,7 +123,8 @@ return [
 
             'table' => [
                 'id' => "Id",
-                'name1' => "Ogla",
+                'name' => "Name",
+                'l_name2' => "Last Name2",
                 'l_name' => "Last Name",
                 'email' => "Email",
                 'sms' => "SMS",

@@ -30,7 +30,9 @@ class UpdateTest extends FormRequest
         return [
             'id' => 'None',
 
-            'name1' => 'required',
+            'name' => 'required',
+
+            'l_name2' => 'nullable',
 
             'l_name' => 'nullable',
 

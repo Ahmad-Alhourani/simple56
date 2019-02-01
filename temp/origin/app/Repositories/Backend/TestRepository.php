@@ -13,7 +13,7 @@ class TestRepository extends BaseRepository implements CacheableInterface
     protected $defaultOrderBy = 'id';
     protected $defaultSortBy = 'asc';
 
-    protected $fieldSearchable = ["name1", "l_name"];
+    protected $fieldSearchable = ["name", "l_name2", "l_name"];
 
     /**
      * Configure the Model
