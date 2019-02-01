@@ -136,8 +136,34 @@ return [
                 'deleted_at' => 'Deleted At',
                 'last_updated' => 'Last Update'
             ]
-        ]
+        ],
         //end_Test_end
+
+        //start_Test2_start
+        'test2s' => [
+            'management' => ' Test2S Management',
+            'create' => 'Create Test2',
+            'view' => 'View Test2',
+            'edit' => 'Edit Test2',
+
+            'table' => [
+                'id' => "Id",
+                'name' => "Name",
+                'l_name' => "Last Name",
+                'email' => "Email",
+                'des' => "Des",
+                'sms' => "SMS",
+                'sort' => 'Sort',
+                'total' => ' Test2S total| Test2S total'
+            ],
+
+            'content' => [
+                'created_at' => 'Created At',
+                'deleted_at' => 'Deleted At',
+                'last_updated' => 'Last Update'
+            ]
+        ]
+        //end_Test2_end
 
         // Do not delete me :) I'm used for auto-generation
     ],
